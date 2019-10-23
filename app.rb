@@ -27,13 +27,13 @@ class App < Sinatra::Base
     binding.pry
     case params[:operation]
     when "add"
-      (params[:number1] + params[:number2]).to_s
+      (params[:number1] + params[:number2]).to_i
     when "subtract"
-      (params[:number1] - params[:number2]).to_s
+      (params[:number1] - params[:number2]).to_i
     when "multiply"
-      (params[:number1] * params[:number2]).to_s
+      (params[:number1] * params[:number2]).to_i
     when "divide"
-      (params[:number1] / params[:number2]).to_s
+      (params[:number1] / params[:number2]).to_i
     end
   end
 
