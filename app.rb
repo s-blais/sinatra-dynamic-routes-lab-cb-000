@@ -24,7 +24,6 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    #binding.pry
     case params[:operation]
     when "add"
       "#{params[:number1].to_i + params[:number2].to_i}"
